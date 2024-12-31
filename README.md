@@ -1,0 +1,3 @@
+# Potential Panic with Unsafe Vector Access in Rust
+
+This example demonstrates a scenario where using unsafe code to manipulate a vector's length can lead to a runtime panic if the elements are not properly initialized.  The `unsafe` block allows direct manipulation of the vector's internal representation, bypassing Rust's usual memory safety checks.  If the elements are accessed before they're set, this will result in a panic.  The solution provides a safe way to handle similar scenarios.
